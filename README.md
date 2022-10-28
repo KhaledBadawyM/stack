@@ -17,7 +17,7 @@ Extras:
 + max
 + mean
 
-Chalanges <br />
+Chalanges:- <br />
 To get mean or max I had to loop over the whole stack, which has a complexity of O(n) ..
 Then I thought about sort but that wouldn't be a solution because it has more time complexity Than loop over the stack, for example let's say we use something like a quick sort or merge sort Algorithms that's nice but the time complexity will be O(n log n) of course it is bigger 
 Than O(n), So it's not the best solution.
