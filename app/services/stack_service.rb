@@ -18,15 +18,18 @@ class Stack
         @has_change = true
         value
     end
-
+    
+    protected
     def is_integer(value)
         value.is_a?(Integer)
     end
-
+    
+    protected
     def is_empty?
         @first.nil?
     end
-
+    
+    public
     def max
         if @has_change
             @current_max = get_max
@@ -34,7 +37,8 @@ class Stack
         end
         return @current_max
     end
-
+    
+    protected
     def get_max
         max_num = @first.value
         current_node = @first.next_node
